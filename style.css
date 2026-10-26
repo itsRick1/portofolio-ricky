@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-teal: #39C5BB;
+  --primary-cyan: #70E1D4;
+  --primary-dark: #0F766E;
+  --accent-pink: #FF75A0;
+  --bg-mint: #F2FAF9;
+  --card-bg: rgba(255, 255, 255, 0.88);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F0FAF9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A0ECE5;
+  border-radius: 9999px;
+  border: 2px solid #F0FAF9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #39C5BB;
+}
+
+/* Subtle background pattern */
+.bg-mesh-pattern {
+  background-color: #F4FCFA;
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(112, 225, 212, 0.18) 0px, transparent 50%),
+    radial-gradient(at 85% 10%, rgba(255, 117, 160, 0.12) 0px, transparent 40%),
+    radial-gradient(at 90% 80%, rgba(57, 197, 187, 0.16) 0px, transparent 50%),
+    radial-gradient(at 10% 85%, rgba(160, 236, 229, 0.22) 0px, transparent 50%);
+}
+
+/* Float Animation */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-soft-float {
+  animation: softFloat 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(57, 197, 187, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(57, 197, 187, 0.65);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite;
+}
+
+/* Equalizer sound wave animation */
+@keyframes barRise {
+  0%, 100% {
+    height: 4px;
+  }
+  50% {
+    height: 16px;
+  }
+}
+
+.sound-bar {
+  display: inline-block;
+  width: 3px;
+  background-color: #39C5BB;
+  border-radius: 9999px;
+  animation: barRise 1s ease-in-out infinite;
+}
+
+.sound-bar:nth-child(1) { animation-delay: 0.1s; }
+.sound-bar:nth-child(2) { animation-delay: 0.3s; }
+.sound-bar:nth-child(3) { animation-delay: 0.2s; }
+.sound-bar:nth-child(4) { animation-delay: 0.4s; }
+
+.paused .sound-bar {
+  animation-play-state: paused;
+  height: 4px !important;
+}
+
+/* Pill badge shimmer */
+.pill-glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(160, 236, 229, 0.6);
+}
+
+/* Timeline dot glow */
+.timeline-dot {
+  position: relative;
+}
+.timeline-dot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  background: rgba(57, 197, 187, 0.35);
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}

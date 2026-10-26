@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ade Ricky Nusantara | Portofolio Mahasiswa Sistem Informasi Untan</title>
+  <meta name="description" content="Portofolio pribadi Ade Ricky Nusantara, Mahasiswa Sistem Informasi Universitas Tanjungpura (Untan) yang gemar Pemrograman, Desain, dan membangun solusi digital interaktif.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            miku: {
+              teal: '#39C5BB',
+              cyan: '#70E1D4',
+              dark: '#0F766E',
+              deep: '#134E4A',
+              pink: '#FF75A0',
+              softPink: '#FFE4EC',
+              light: '#EAF8F7',
+              bg: '#F4FCFA',
+              border: '#CCF2ED'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif']
+          },
+          borderRadius: {
+            '2xl': '1rem',
+            '3xl': '1.5rem',
+            '4xl': '2rem',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-mesh-pattern text-slate-800 antialiased selection:bg-teal-200 selection:text-teal-900 min-h-screen flex flex-col justify-between">
+
+  <!-- ========================================================
+       1. NAVBAR SECTION
+  ======================================================== -->
+  <header class="fixed top-0 left-0 w-full z-40 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 pb-3">
+      <nav class="bg-white/85 backdrop-blur-md border border-miku-border rounded-full px-4 sm:px-6 py-2.5 sm:py-3 shadow-sm flex items-center justify-between">
+        
+        <!-- Logo / Name -->
+        <a href="#hero" class="flex items-center gap-2.5 group">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-miku-teal to-miku-cyan flex items-center justify-center text-white font-heading font-extrabold text-base shadow-sm group-hover:scale-105 transition-all duration-300">
+            AR
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-bold text-base sm:text-lg text-slate-800 tracking-tight leading-tight group-hover:text-miku-teal transition-colors">
+              Ade Ricky Nusantara
+            </span>
+            <span class="text-[11px] font-medium text-teal-600/90 tracking-wide flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-miku-teal inline-block animate-pulse"></span>
+              Sistem Informasi
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="hidden md:flex items-center gap-1 lg:gap-2">
+          <li>
+            <a href="#hero" class="desktop-nav-link text-sm font-semibold text-slate-600 hover:text-miku-dark hover:bg-teal-50/80 px-3.5 py-1.5 rounded-full transition-all duration-200">
+              Beranda
+            </a>
+          </li>
+          <li>
+            <a href="#tentang" class="desktop-nav-link text-sm font-semibold text-slate-600 hover:text-miku-dark hover:bg-teal-50/80 px-3.5 py-1.5 rounded-full transition-all duration-200">
+              Tentang
+            </a>
+          </li>
+          <li>
+            <a href="#riwayat" class="desktop-nav-link text-sm font-semibold text-slate-600 hover:text-miku-dark hover:bg-teal-50/80 px-3.5 py-1.5 rounded-full transition-all duration-200">
+              Riwayat
+            </a>
+          </li>
+          <li>
+            <a href="#portofolio" class="desktop-nav-link text-sm font-semibold text-slate-600 hover:text-miku-dark hover:bg-teal-50/80 px-3.5 py-1.5 rounded-full transition-all duration-200">
+              Portofolio
+            </a>
+          </li>
+          <li>
+            <a href="#kontak" class="desktop-nav-link text-sm font-semibold text-slate-600 hover:text-miku-dark hover:bg-teal-50/80 px-3.5 py-1.5 rounded-full transition-all duration-200">
+              Kontak
+            </a>
+          </li>
+        </ul>
+
+        <!-- Right Side Desktop CTA -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#kontak" class="hover:scale-105 active:scale-95 transition-all duration-300 bg-gradient-to-r from-miku-teal to-teal-500 hover:from-teal-500 hover:to-miku-teal text-white text-xs lg:text-sm font-semibold px-5 py-2 rounded-full shadow-md shadow-teal-200/60 flex items-center gap-2">
+            <span>Mari Terhubung</span>
+            <i class="fa-solid fa-paper-plane text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Buka Menu Navigasi" class="md:hidden w-10 h-10 rounded-full bg-teal-50 hover:bg-teal-100/70 border border-miku-border flex items-center justify-center text-teal-800 transition-all duration-200 focus:outline-none">
+          <i id="menu-icon-open" class="fa-solid fa-bars text-lg"></i>
+          <i id="menu-icon-close" class="fa-solid fa-xmark text-xl hidden"></i>
+        </button>
+
+      </nav>
+
+      <!-- Mobile Dropdown Navigation Drawer -->
+      <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white/95 backdrop-blur-xl border border-miku-border rounded-3xl p-4 shadow-xl space-y-1 transition-all duration-300">
+        <a href="#hero" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-2xl text-slate-700 font-semibold hover:bg-teal-50 hover:text-miku-dark transition-colors">
+          <div class="w-8 h-8 rounded-full bg-teal-100/70 flex items-center justify-center text-miku-teal text-sm">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <span>Beranda</span>
+        </a>
+        <a href="#tentang" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-2xl text-slate-700 font-semibold hover:bg-teal-50 hover:text-miku-dark transition-colors">
+          <div class="w-8 h-8 rounded-full bg-teal-100/70 flex items-center justify-center text-miku-teal text-sm">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span>Tentang Saya</span>
+        </a>
+        <a href="#riwayat" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-2xl text-slate-700 font-semibold hover:bg-teal-50 hover:text-miku-dark transition-colors">
+          <div class="w-8 h-8 rounded-full bg-teal-100/70 flex items-center justify-center text-miku-teal text-sm">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <span>Riwayat & Edukasi</span>
+        </a>
+        <a href="#portofolio" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-2xl text-slate-700 font-semibold hover:bg-teal-50 hover:text-miku-dark transition-colors">
+          <div class="w-8 h-8 rounded-full bg-teal-100/70 flex items-center justify-center text-miku-teal text-sm">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <span>Proyek & Portofolio</span>
+        </a>
+        <a href="#kontak" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-2xl text-slate-700 font-semibold hover:bg-teal-50 hover:text-miku-dark transition-colors">
+          <div class="w-8 h-8 rounded-full bg-teal-100/70 flex items-center justify-center text-miku-teal text-sm">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <span>Kontak</span>
+        </a>
+
+        <!-- Mobile CTA Button inside Menu -->
+        <div class="pt-2">
+          <a href="#kontak" class="mobile-nav-link w-full hover:scale-105 active:scale-95 transition-all duration-300 bg-gradient-to-r from-miku-teal to-teal-500 text-white font-semibold text-center py-3 rounded-2xl shadow-md flex items-center justify-center gap-2">
+            <i class="fa-solid fa-paper-plane text-sm"></i>
+            <span>Hubungi Saya Langsung</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Content Wrap -->
+  <main class="flex-grow pt-24 sm:pt-28 pb-16">
+
+    <!-- ========================================================
+         HERO SECTION (Inspired by Reference Banner & Pill Cards)
+    ======================================================== -->
+    <section id="hero" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+      
+      <!-- Cyan Pastel Hero Capsule Banner -->
+      <div class="relative overflow-hidden rounded-3xl sm:rounded-4xl bg-gradient-to-br from-[#70E1D4]/30 via-[#39C5BB]/20 to-[#FFE4EC]/30 border border-teal-200/80 p-6 sm:p-10 lg:p-14 shadow-xl shadow-teal-100/50 backdrop-blur-sm">
+        
+        <!-- Decorative Anime Floating Badges & Sparkles -->
+        <div class="absolute top-4 right-6 sm:top-8 sm:right-12 text-pink-400/80 animate-soft-float text-xl sm:text-2xl select-none">
+          ♥ <span class="text-xs sm:text-sm font-semibold bg-white/70 px-2.5 py-1 rounded-full text-pink-500 shadow-sm ml-1">UI/UX Dream</span>
+        </div>
+        <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-teal-200/40 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="absolute top-0 right-1/4 w-36 h-36 bg-pink-200/30 rounded-full blur-xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+          
+          <!-- Profile Picture (Left Column on Laptop, Center on Mobile) -->
+          <div class="lg:col-span-5 flex flex-col items-center justify-center text-center">
+            <div class="relative group">
+              <!-- Animated Glowing Ring -->
+              <div class="absolute -inset-1.5 bg-gradient-to-r from-miku-teal via-miku-cyan to-pink-300 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse-glow"></div>
+              
+              <!-- Profile Image Container -->
+              <div class="relative w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl bg-teal-50">
+                <img 
+                  src="assets/images/foto-profil.jpg" 
+                  alt="Foto Profil Ade Ricky Nusantara - Mahasiswa Sistem Informasi Untan" 
+                  class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                  loading="eager"
+                >
+              </div>
+
+              <!-- Status Badge (Floating pill) -->
+              <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-white/95 backdrop-blur-md border border-teal-200 px-4 py-1.5 rounded-full shadow-lg flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="text-xs font-bold text-slate-700">Open for Projects & Internship</span>
+              </div>
+            </div>
+
+            <!-- Mini Pill Tags under Photo -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
+              <span class="px-3 py-1 bg-white/80 border border-teal-200 text-teal-800 text-xs font-semibold rounded-full shadow-sm">
+                #Pemrograman
+              </span>
+              <span class="px-3 py-1 bg-white/80 border border-teal-200 text-teal-800 text-xs font-semibold rounded-full shadow-sm">
+                #Desain
+              </span>
+              <span class="px-3 py-1 bg-white/80 border border-teal-200 text-teal-800 text-xs font-semibold rounded-full shadow-sm">
+                #MainGame
+              </span>
+            </div>
+          </div>
+
+          <!-- Hero Details & CTA (Right Column on Laptop, Bottom on Mobile) -->
+          <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 sm:space-y-5">
+            
+            <!-- Greeting Pill (Echoing Reference search pill tags) -->
+            <div class="inline-flex items-center gap-2 bg-white/90 border border-teal-200 px-4 py-1.5 rounded-full shadow-sm">
+              <span class="text-miku-teal font-bold"><i class="fa-solid fa-sparkles"></i></span>
+              <span class="text-xs sm:text-sm font-semibold text-teal-900 tracking-wide">
+                Halo, Selamat Datang di Portofolio Saya!
+              </span>
+            </div>
+
+            <!-- Full Name -->
+            <h1 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-slate-900 tracking-tight leading-tight">
+              Ade Ricky Nusantara
+            </h1>
+
+            <!-- Tagline (Mandatory Prompt Text) -->
+            <div class="p-3 sm:p-4 rounded-2xl bg-white/70 backdrop-blur-md border border-teal-200/80 shadow-sm w-full">
+              <p class="font-heading font-bold text-base sm:text-lg md:text-xl text-teal-800 tracking-normal">
+                Mahasiswa Sistem Informasi | Antusias UI/UX & Web Dev
+              </p>
+            </div>
+
+            <!-- Bio Narrative -->
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
+              Saya adalah mahasiswa jurusan Sistem Informasi di Universitas Tanjungpura yang memiliki ketertarikan mendalam di bidang Pemrograman dan Desain. Saya senang mempelajari teknologi baru dan membangun solusi digital yang interaktif serta ramah pengguna.
+            </p>
+
+            <!-- CTA Buttons with Hover Scale & Transition -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2 w-full sm:w-auto">
+              <!-- Primary CTA (Links to Contact Section) -->
+              <a 
+                href="#kontak" 
+                id="hero-cta-btn"
+                class="hover:scale-105 active:scale-95 transition-all duration-300 bg-gradient-to-r from-miku-teal to-teal-600 hover:from-teal-600 hover:to-miku-teal text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-lg shadow-teal-300/50 flex items-center gap-2.5 w-full sm:w-auto justify-center"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Hubungi Saya Sekarang</span>
+              </a>
+
+              <!-- Secondary CTA (Links to Portfolio Section) -->
+              <a 
+                href="#portofolio" 
+                class="hover:scale-105 active:scale-95 transition-all duration-300 bg-white/90 hover:bg-white text-teal-800 hover:text-miku-dark font-bold text-sm sm:text-base px-6 py-3.5 rounded-full border border-teal-200 shadow-sm flex items-center gap-2.5 w-full sm:w-auto justify-center"
+              >
+                <i class="fa-solid fa-eye text-teal-500"></i>
+                <span>Lihat Karya & Proyek</span>
+              </a>
+            </div>
+
+            <!-- Reference Style Feature Highlights (01, 02, 03 Badges) -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full pt-4">
+              <div class="bg-white/80 backdrop-blur-sm border border-teal-100 p-3 rounded-2xl flex items-center gap-3 shadow-sm hover:border-teal-300 transition-colors">
+                <span class="font-heading font-black text-2xl text-miku-teal">01</span>
+                <div class="text-left">
+                  <p class="text-xs font-bold text-slate-800">Pemrograman</p>
+                  <p class="text-[11px] text-slate-500">Python & Web</p>
+                </div>
+              </div>
+              <div class="bg-white/80 backdrop-blur-sm border border-teal-100 p-3 rounded-2xl flex items-center gap-3 shadow-sm hover:border-teal-300 transition-colors">
+                <span class="font-heading font-black text-2xl text-miku-teal">02</span>
+                <div class="text-left">
+                  <p class="text-xs font-bold text-slate-800">Desain Kreatif</p>
+                  <p class="text-[11px] text-slate-500">Ilustrasi & UI</p>
+                </div>
+              </div>
+              <div class="bg-white/80 backdrop-blur-sm border border-teal-100 p-3 rounded-2xl flex items-center gap-3 shadow-sm hover:border-teal-300 transition-colors">
+                <span class="font-heading font-black text-2xl text-miku-teal">03</span>
+                <div class="text-left">
+                  <p class="text-xs font-bold text-slate-800">Gamer & Creator</p>
+                  <p class="text-[11px] text-slate-500">Main Game & Digital Art</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================
+         2. TENTANG SAYA (ABOUT ME) SECTION
+    ======================================================== -->
+    <section id="tentang" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+        <div class="inline-flex items-center gap-2 bg-teal-50 border border-teal-200/80 px-4 py-1.5 rounded-full mb-3">
+          <i class="fa-solid fa-id-card text-miku-teal text-xs"></i>
+          <span class="text-xs font-bold tracking-wider uppercase text-teal-800">Tentang Saya</span>
+        </div>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Menyatukan Logika Sistem & Seni Desain Antarmuka
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3">
+          Mengenal latar belakang akademis, minat di dunia digital, dan kompetensi teknis yang terus diasah setiap hari.
+        </p>
+      </div>
+
+      <!-- Content Stacking on Mobile, 2 Columns on Laptop -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Story & Educational Background -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-miku-border shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-slate-900 mb-4 flex items-center gap-2.5">
+              <span class="w-8 h-8 rounded-xl bg-teal-100 flex items-center justify-center text-teal-700 text-sm">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </span>
+              <span>Latar Belakang & Pendidikan</span>
+            </h3>
+            
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+              Saya adalah mahasiswa jurusan <strong class="text-teal-800 font-semibold">Sistem Informasi</strong> di <strong class="text-teal-800 font-semibold">Universitas Tanjungpura (Untan)</strong> yang memiliki ketertarikan mendalam di bidang Pemrograman dan Desain.
+            </p>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+              Saya senang mempelajari teknologi baru dan membangun solusi digital yang interaktif serta ramah pengguna. Selain itu, saya juga gemar menggambar sebagai bentuk ekspresi kreatif digital, serta menikmati dunia gaming yang ikut menginspirasi cara saya berpikir dalam merancang pengalaman pengguna yang menyenangkan.
+            </p>
+
+            <!-- Highlight Metrics in Pill Boxes -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 border-t border-slate-100">
+              <div class="p-3 bg-teal-50/60 rounded-2xl border border-teal-100 text-center">
+                <p class="text-xs text-slate-500 font-medium">Kampus</p>
+                <p class="text-sm font-bold text-teal-900 mt-0.5">Untan Pontianak</p>
+              </div>
+              <div class="p-3 bg-teal-50/60 rounded-2xl border border-teal-100 text-center">
+                <p class="text-xs text-slate-500 font-medium">Prestasi</p>
+                <p class="text-sm font-bold text-teal-900 mt-0.5">🏆 Juara Kelas</p>
+              </div>
+              <div class="col-span-2 sm:col-span-1 p-3 bg-teal-50/60 rounded-2xl border border-teal-100 text-center">
+                <p class="text-xs text-slate-500 font-medium">Minat Utama</p>
+                <p class="text-sm font-bold text-teal-900 mt-0.5">Coding & Desain</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards Inspired by Reference (01, 02 Cards) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white/90 backdrop-blur-md rounded-3xl p-5 border border-miku-border shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-600 text-lg flex-shrink-0">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-base text-slate-900">Menggambar & Ilustrasi</h4>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                  Ekspresi kreatif lewat karya ilustrasi digital yang unik dan penuh warna.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white/90 backdrop-blur-md rounded-3xl p-5 border border-miku-border shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-600 text-lg flex-shrink-0">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-base text-slate-900">Python Programming</h4>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                  Belajar Python untuk otomasi, logika algoritma, dan proyek coding kampus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Technical Skills & Visual Badges -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-miku-border shadow-sm">
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-2 flex items-center gap-2">
+              <i class="fa-solid fa-code text-miku-teal"></i>
+              <span>Keahlian & Skills</span>
+            </h3>
+            <p class="text-xs text-slate-500 mb-6">
+              Teknologi, tools desain, dan keahlian yang aktif saya pelajari dan terapkan:
+            </p>
+
+            <!-- Skill Badges Grid (with hover scale effect) -->
+            <div class="flex flex-wrap gap-2.5">
+              
+              <!-- Menggambar -->
+              <div class="hover:scale-105 transition-all duration-300 px-3.5 py-2 rounded-2xl bg-teal-50/80 border border-teal-200 text-teal-900 text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-sm cursor-default">
+                <i class="fa-solid fa-pen-nib text-pink-500 text-base"></i>
+                <span>Menggambar & Ilustrasi</span>
+              </div>
+
+              <!-- Python -->
+              <div class="hover:scale-105 transition-all duration-300 px-3.5 py-2 rounded-2xl bg-teal-50/80 border border-teal-200 text-teal-900 text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-sm cursor-default">
+                <i class="fa-brands fa-python text-blue-500 text-base"></i>
+                <span>Python</span>
+              </div>
+
+              <!-- Gaming -->
+              <div class="hover:scale-105 transition-all duration-300 px-3.5 py-2 rounded-2xl bg-teal-50/80 border border-teal-200 text-teal-900 text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-sm cursor-default">
+                <i class="fa-solid fa-gamepad text-purple-500 text-base"></i>
+                <span>Main Game</span>
+              </div>
+
+            </div>
+
+            <!-- Soft Learning Goal Banner -->
+            <div class="mt-6 p-4 rounded-2xl bg-gradient-to-r from-teal-50 via-cyan-50 to-pink-50 border border-teal-200/80">
+              <div class="flex items-center gap-3">
+                <span class="w-8 h-8 rounded-full bg-miku-teal text-white flex items-center justify-center text-xs flex-shrink-0">
+                  <i class="fa-solid fa-bolt"></i>
+                </span>
+                <p class="text-xs text-slate-700 leading-tight">
+                  <strong class="text-teal-900">Target Belajar Saat Ini:</strong> Python lanjutan, Web Development, & Desain Digital Kreatif.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================
+         3. PENGALAMAN & RIWAYAT (EXPERIENCE / EDUCATION)
+         Responsive Timeline: 2 Kolom di Laptop, 1 Kolom Vertikal di HP
+    ======================================================== -->
+    <section id="riwayat" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div class="inline-flex items-center gap-2 bg-teal-50 border border-teal-200/80 px-4 py-1.5 rounded-full mb-3">
+          <i class="fa-solid fa-timeline text-miku-teal text-xs"></i>
+          <span class="text-xs font-bold tracking-wider uppercase text-teal-800">Riwayat & Pengalaman</span>
+        </div>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Jejak Langkah & Perkembangan Karir
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3">
+          Kombinasi pengalaman organisasi kampus, magang praktis, dan pelatihan intensif untuk memperkuat keahlian teknis.
+        </p>
+      </div>
+
+      <!-- Timeline Wrapper -->
+      <div class="relative max-w-4xl mx-auto">
+        
+        <!-- Central Line for Laptop (Hidden on Mobile, replaced by left line) -->
+        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-miku-cyan via-miku-teal to-teal-200 transform -translate-x-1/2 rounded-full"></div>
+        
+        <!-- Mobile Left Line -->
+        <div class="block md:hidden absolute left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-miku-cyan via-miku-teal to-teal-200 rounded-full"></div>
+
+        <div class="space-y-8 sm:space-y-12">
+          
+          <!-- Timeline Item 1: Pendidikan (Left on Laptop, Right on Mobile) -->
+          <div class="relative flex flex-col md:flex-row items-center">
+            <!-- Content Card -->
+            <div class="w-full md:w-1/2 pl-12 md:pl-0 md:pr-10 text-left md:text-right">
+              <div class="bg-white/95 backdrop-blur-md rounded-3xl p-6 border border-miku-border shadow-sm hover:shadow-md transition-all">
+                <span class="inline-block px-3 py-1 bg-teal-100/70 text-teal-800 text-xs font-bold rounded-full mb-2">
+                  2026 - Sekarang
+                </span>
+                <h3 class="font-heading font-bold text-lg text-slate-900">S1 Sistem Informasi</h3>
+                <p class="text-sm font-semibold text-miku-dark">Universitas Tanjungpura (Untan)</p>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                  Mempelajari Sistem Informasi, Pemrograman, Basis Data, dan Analisis Sistem di Universitas Tanjungpura, Pontianak. Aktif mengembangkan skill coding dan desain kreatif.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Timeline Center Marker / Node -->
+            <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-white border-4 border-miku-teal shadow-md flex items-center justify-center text-miku-teal text-xs">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            
+            <!-- Empty Spacer for Laptop Alignment -->
+            <div class="hidden md:block w-1/2 pl-10"></div>
+          </div>
+
+          <!-- Timeline Item 2: UI/UX Intern (Right on Laptop, Right on Mobile) -->
+          <div class="relative flex flex-col md:flex-row items-center">
+            <!-- Empty Spacer for Laptop Alignment -->
+            <div class="hidden md:block w-1/2 pr-10"></div>
+
+            <!-- Timeline Center Marker / Node -->
+            <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-white border-4 border-miku-teal shadow-md flex items-center justify-center text-miku-teal text-xs">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+
+            <!-- Content Card -->
+            <div class="w-full md:w-1/2 pl-12 md:pl-10 text-left">
+              <div class="bg-white/95 backdrop-blur-md rounded-3xl p-6 border border-miku-border shadow-sm hover:shadow-md transition-all">
+                <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-bold rounded-full mb-2">
+                  Prestasi Akademik 🏆
+                </span>
+                <h3 class="font-heading font-bold text-lg text-slate-900">Juara Kelas</h3>
+                <p class="text-sm font-semibold text-miku-dark">Universitas Tanjungpura</p>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                  Berhasil meraih predikat Juara Kelas sebagai bentuk dedikasi dan konsistensi dalam proses belajar di lingkungan akademik.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Organisasi Himpunan (Left on Laptop, Right on Mobile) -->
+          <div class="relative flex flex-col md:flex-row items-center">
+            <!-- Content Card -->
+            <div class="w-full md:w-1/2 pl-12 md:pl-0 md:pr-10 text-left md:text-right">
+              <div class="bg-white/95 backdrop-blur-md rounded-3xl p-6 border border-miku-border shadow-sm hover:shadow-md transition-all">
+                <span class="inline-block px-3 py-1 bg-teal-100/70 text-teal-800 text-xs font-bold rounded-full mb-2">
+                  Hobi & Minat
+                </span>
+                <h3 class="font-heading font-bold text-lg text-slate-900">Menggambar & Ilustrasi Digital</h3>
+                <p class="text-sm font-semibold text-miku-dark">Kreativitas & Ekspresi Seni</p>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                  Menuangkan ide dan ekspresi lewat karya ilustrasi digital. Seni visual menjadi cara saya menyeimbangkan dunia teknis dengan kreativitas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Center Marker / Node -->
+            <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-white border-4 border-miku-teal shadow-md flex items-center justify-center text-miku-teal text-xs">
+              <i class="fa-solid fa-users"></i>
+            </div>
+
+            <!-- Empty Spacer for Laptop Alignment -->
+            <div class="hidden md:block w-1/2 pl-10"></div>
+          </div>
+
+          <!-- Timeline Item 4: Pelatihan & Sertifikasi (Right on Laptop, Right on Mobile) -->
+          <div class="relative flex flex-col md:flex-row items-center">
+            <!-- Empty Spacer for Laptop Alignment -->
+            <div class="hidden md:block w-1/2 pr-10"></div>
+
+            <!-- Timeline Center Marker / Node -->
+            <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-white border-4 border-miku-teal shadow-md flex items-center justify-center text-miku-teal text-xs">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+
+            <!-- Content Card -->
+            <div class="w-full md:w-1/2 pl-12 md:pl-10 text-left">
+              <div class="bg-white/95 backdrop-blur-md rounded-3xl p-6 border border-miku-border shadow-sm hover:shadow-md transition-all">
+                <span class="inline-block px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded-full mb-2">
+                  Hobi Aktif 🎮
+                </span>
+                <h3 class="font-heading font-bold text-lg text-slate-900">Main Game & Digital Creator</h3>
+                <p class="text-sm font-semibold text-miku-dark">Passion & Rekreasi</p>
+                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                  Gaming bukan sekadar hiburan — ini adalah cara saya menganalisis UX interaktif, memahami desain antarmuka yang engaging, dan mengeksplorasi dunia digital secara menyenangkan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================
+         4. PROYEK / KARYA (PORTOFOLIO) SECTION
+         Responsive Grid: 1 Kolom di HP, 2 Kolom di Tablet, 3 Kolom di Laptop
+    ======================================================== -->
+    <section id="portofolio" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+        <div class="inline-flex items-center gap-2 bg-teal-50 border border-teal-200/80 px-4 py-1.5 rounded-full mb-3">
+          <i class="fa-solid fa-layer-group text-miku-teal text-xs"></i>
+          <span class="text-xs font-bold tracking-wider uppercase text-teal-800">Karya Terpilih</span>
+        </div>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Portofolio Desain UI/UX & Web Development
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3">
+          Koleksi proyek nyata, studi kasus antarmuka, dan tugas aplikasi web yang dikembangkan dengan fokus kemudahan pengguna.
+        </p>
+      </div>
+
+      <!-- Responsive Grid: 1 Col (HP) -> 2 Cols (MD/Tablet) -> 3 Cols (LG/Laptop) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- CARD PROYEK 1: EduHub Portal -->
+        <div class="group bg-white/90 backdrop-blur-md rounded-3xl border border-miku-border overflow-hidden shadow-sm hover:shadow-xl hover:shadow-teal-100/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <!-- Image Container with Hover Zoom -->
+            <div class="relative overflow-hidden aspect-video bg-teal-50">
+              <img 
+                src="assets/images/proyek1.jpg" 
+                alt="Karya Ilustrasi Ade Ricky Nusantara" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3">
+                <span class="px-3 py-1 bg-white/95 text-teal-800 text-xs font-bold rounded-full shadow-sm border border-teal-200/60">
+                  Karya Seni & Ilustrasi
+                </span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-slate-900 group-hover:text-miku-teal transition-colors">
+                Karya Ilustrasi Digital
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 line-clamp-3 leading-relaxed">
+                Koleksi karya ilustrasi digital yang mencerminkan ekspresi kreatif dan imajinasi. Setiap karya memiliki cerita dan gaya visual yang unik.
+              </p>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-1.5 mt-4">
+                <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[11px] font-semibold rounded-full border border-teal-200/60">Digital Art</span>
+                <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[11px] font-semibold rounded-full border border-teal-200/60">Ilustrasi</span>
+                <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[11px] font-semibold rounded-full border border-teal-200/60">Kreativitas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Footer with "Lihat Detail" Button -->
+          <div class="p-6 pt-0">
+            <button 
+              type="button" 
+              onclick="openProjectModal(1)"
+              class="w-full hover:scale-105 active:scale-95 transition-all duration-300 bg-teal-50 hover:bg-miku-teal text-teal-800 hover:text-white border border-teal-200 hover:border-miku-teal rounded-full py-2.5 px-4 font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm"
+            >
+              <span>Lihat Detail</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD PROYEK 2: OtakuTech Store -->
+        <div class="group bg-white/90 backdrop-blur-md rounded-3xl border border-miku-border overflow-hidden shadow-sm hover:shadow-xl hover:shadow-teal-100/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <!-- Image Container with Hover Zoom -->
+            <div class="relative overflow-hidden aspect-video bg-teal-50">
+              <img 
+                src="assets/images/proyek2.jpg" 
+                alt="Tugas Koding Ade Ricky Nusantara" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3">
+                <span class="px-3 py-1 bg-white/95 text-teal-800 text-xs font-bold rounded-full shadow-sm border border-teal-200/60">
+                  Tugas Kuliah
+                </span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-slate-900 group-hover:text-miku-teal transition-colors">
+                Tugas Koding Kuliah
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 line-clamp-3 leading-relaxed">
+                Kumpulan tugas pemrograman dan coding yang dikerjakan selama perkuliahan di Sistem Informasi Untan, mencakup berbagai bahasa dan konsep coding.
+              </p>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-1.5 mt-4">
+                <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[11px] font-semibold rounded-full border border-teal-200/60">Python</span>
+                <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[11px] font-semibold rounded-full border border-teal-200/60">HTML & CSS</span>
+                <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[11px] font-semibold rounded-full border border-teal-200/60">Algoritma</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Footer with "Lihat Detail" Button -->
+          <div class="p-6 pt-0">
+            <button 
+              type="button" 
+              onclick="openProjectModal(2)"
+              class="w-full hover:scale-105 active:scale-95 transition-all duration-300 bg-teal-50 hover:bg-miku-teal text-teal-800 hover:text-white border border-teal-200 hover:border-miku-teal rounded-full py-2.5 px-4 font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm"
+            >
+              <span>Lihat Detail</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD PROYEK 3: FocusMint Habit Tracker -->
+        <div class="group bg-white/90 backdrop-blur-md rounded-3xl border border-miku-border overflow-hidden shadow-sm hover:shadow-xl hover:shadow-teal-100/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <!-- Image Container with Hover Zoom -->
+            <div class="relative overflow-hidden aspect-video bg-teal-50">
+              <img 
+                src="assets/images/proyek3.jpg" 
+                alt="Proyek Website Ade Ricky Nusantara" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              >
+              <div class="absolute top-3 left-3">
+                <span class="px-3 py-1 bg-white/95 text-teal-800 text-xs font-bold rounded-full shadow-sm border border-teal-200/60">
+                  Proyek Website
+                </span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6">
+              <h3 class="font-heading font-bold text-lg sm:text-xl text-slate-900 group-hover:text-miku-teal transition-colors">
+                Proyek Website Pribadi
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-2 line-clamp-3 leading-relaxed">
+                Proyek pengembangan website yang dibangun sebagai portofolio dan latihan praktis membangun antarmuka web yang responsif dan interaktif.
+              </p>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-1.5 mt-4">
+                <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[11px] font-semibold rounded-full border border-teal-200/60">HTML & CSS</span>
+                <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[11px] font-semibold rounded-full border border-teal-200/60">JavaScript</span>
+                <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[11px] font-semibold rounded-full border border-teal-200/60">Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Footer with "Lihat Detail" Button -->
+          <div class="p-6 pt-0">
+            <button 
+              type="button" 
+              onclick="openProjectModal(3)"
+              class="w-full hover:scale-105 active:scale-95 transition-all duration-300 bg-teal-50 hover:bg-miku-teal text-teal-800 hover:text-white border border-teal-200 hover:border-miku-teal rounded-full py-2.5 px-4 font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm"
+            >
+              <span>Lihat Detail</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================
+         5. KONTAK & FORMULIR PESAN
+         Input Lebar Penuh (w-full) Ramah Mobile & Efek Hover Membesar
+    ======================================================== -->
+    <section id="kontak" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+        <div class="inline-flex items-center gap-2 bg-teal-50 border border-teal-200/80 px-4 py-1.5 rounded-full mb-3">
+          <i class="fa-solid fa-comments text-miku-teal text-xs"></i>
+          <span class="text-xs font-bold tracking-wider uppercase text-teal-800">Kontak Saya</span>
+        </div>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+          Mari Memulai Diskusi & Kolaborasi
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3">
+          Punya tawaran proyek, peluang magang, atau sekadar ingin berdiskusi mengenai UI/UX & Web Dev? Kirim pesan Anda di bawah ini!
+        </p>
+      </div>
+
+      <!-- Contact Wrapper: Stacks on HP, 2 Cols on Laptop -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left: Contact Details Cards -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-4">
+          
+          <!-- Card 1: Email -->
+          <a href="mailto:h1101261017@student.untan.ac.id" class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-miku-border shadow-sm hover:shadow-md hover:border-teal-300 transition-all flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-600 text-lg group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Email Resmi</p>
+              <p class="text-sm sm:text-base font-bold text-slate-800 group-hover:text-miku-teal transition-colors">
+                h1101261017@student.untan.ac.id
+              </p>
+            </div>
+          </a>
+
+          <!-- Card 2: WhatsApp / Phone -->
+          <a href="https://wa.me/6285845364748" target="_blank" rel="noopener noreferrer" class="group bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-miku-border shadow-sm hover:shadow-md hover:border-teal-300 transition-all flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-600 text-lg group-hover:scale-110 transition-transform">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">WhatsApp / Telepon</p>
+              <p class="text-sm sm:text-base font-bold text-slate-800 group-hover:text-miku-teal transition-colors">
+                0858-4536-4748
+              </p>
+            </div>
+          </a>
+
+          <!-- Card 3: Lokasi -->
+          <div class="bg-white/90 backdrop-blur-md rounded-3xl p-6 border border-miku-border shadow-sm flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-600 text-lg">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Domisili</p>
+              <p class="text-sm sm:text-base font-bold text-slate-800">
+                Pontianak, Kalimantan Barat
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: Quick Availability Note -->
+          <div class="p-6 rounded-3xl bg-gradient-to-br from-teal-500/10 via-cyan-400/10 to-pink-400/10 border border-teal-200/80 backdrop-blur-md">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="text-xs font-bold text-teal-900">Respon Cepat</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Saya siap membalas pesan Anda dalam 1x24 jam untuk peluang magang, freelance web design, maupun kolaborasi proyek kampus.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-miku-border shadow-sm">
+            <form id="contact-form" class="space-y-4 sm:space-y-5">
+              
+              <!-- Input Nama Lengkap (w-full) -->
+              <div>
+                <label for="contact-name" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1.5">
+                  Nama Lengkap <span class="text-pink-500">*</span>
+                </label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-teal-500/70 text-sm">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  <input 
+                    type="text" 
+                    id="contact-name" 
+                    required 
+                    placeholder="Masukkan nama Anda..."
+                    class="w-full pl-10 pr-4 py-3 bg-teal-50/40 border border-teal-200/80 rounded-2xl text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-miku-teal focus:border-transparent transition-all"
+                  >
+                </div>
+              </div>
+
+              <!-- Input Email (w-full) -->
+              <div>
+                <label for="contact-email" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1.5">
+                  Alamat Email <span class="text-pink-500">*</span>
+                </label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-teal-500/70 text-sm">
+                    <i class="fa-solid fa-at"></i>
+                  </span>
+                  <input 
+                    type="email" 
+                    id="contact-email" 
+                    required 
+                    placeholder="nama@email.com"
+                    class="w-full pl-10 pr-4 py-3 bg-teal-50/40 border border-teal-200/80 rounded-2xl text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-miku-teal focus:border-transparent transition-all"
+                  >
+                </div>
+              </div>
+
+              <!-- Input Subjek (w-full) -->
+              <div>
+                <label for="contact-subject" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1.5">
+                  Tujuan Pesan / Subjek
+                </label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-teal-500/70 text-sm">
+                    <i class="fa-solid fa-tag"></i>
+                  </span>
+                  <input 
+                    type="text" 
+                    id="contact-subject" 
+                    placeholder="Misal: Peluang Magang UI/UX, Diskusi Proyek..."
+                    class="w-full pl-10 pr-4 py-3 bg-teal-50/40 border border-teal-200/80 rounded-2xl text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-miku-teal focus:border-transparent transition-all"
+                  >
+                </div>
+              </div>
+
+              <!-- Textarea Pesan (w-full) -->
+              <div>
+                <label for="contact-message" class="block text-xs sm:text-sm font-bold text-slate-700 mb-1.5">
+                  Isi Pesan <span class="text-pink-500">*</span>
+                </label>
+                <textarea 
+                  id="contact-message" 
+                  rows="4" 
+                  required 
+                  placeholder="Tuliskan pesan, rincian proyek, atau pertanyaan Anda di sini..."
+                  class="w-full px-4 py-3 bg-teal-50/40 border border-teal-200/80 rounded-2xl text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-miku-teal focus:border-transparent transition-all"
+                ></textarea>
+              </div>
+
+              <!-- Submit Button (Hover Scale & Smooth Transition) -->
+              <button 
+                type="submit" 
+                id="submit-btn"
+                class="w-full sm:w-auto hover:scale-105 active:scale-95 transition-all duration-300 bg-gradient-to-r from-miku-teal to-teal-600 hover:from-teal-600 hover:to-miku-teal text-white font-bold text-sm sm:text-base py-3.5 px-8 rounded-full shadow-lg shadow-teal-300/50 flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Kirim Pesan Sekarang</span>
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER & SOSIAL MEDIA SECTION
+  ======================================================== -->
+  <footer class="bg-white/90 backdrop-blur-md border-t border-teal-200/70 pt-10 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-teal-100">
+        
+        <!-- Left: Footer Branding -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-miku-teal to-miku-cyan flex items-center justify-center text-white font-heading font-extrabold text-sm">
+              AR
+            </div>
+            <span class="font-heading font-extrabold text-lg text-slate-900 tracking-tight">
+              Ade Ricky Nusantara
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 mt-1 max-w-sm">
+            Mahasiswa Sistem Informasi Untan | Coding, Desain & Main Game
+          </p>
+        </div>
+
+        <!-- Right: Social Media Active Links with Hover Scale Effect -->
+        <div class="flex items-center gap-3">
+          
+          <!-- Instagram -->
+          <a 
+            href="https://instagram.com/resw_art" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Kunjungi Instagram @resw_art"
+            class="w-11 h-11 rounded-full bg-teal-50/80 hover:bg-gradient-to-tr hover:from-pink-500 hover:to-purple-500 text-teal-700 hover:text-white border border-teal-200/80 flex items-center justify-center text-base hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm hover:shadow-md"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a 
+            href="https://linkedin.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Kunjungi LinkedIn Saya"
+            class="w-11 h-11 rounded-full bg-teal-50/80 hover:bg-blue-600 text-teal-700 hover:text-white border border-teal-200/80 flex items-center justify-center text-base hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm hover:shadow-md"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <!-- GitHub -->
+          <a 
+            href="https://github.com/itsRick1" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Kunjungi GitHub itsRick1"
+            class="w-11 h-11 rounded-full bg-teal-50/80 hover:bg-slate-900 text-teal-700 hover:text-white border border-teal-200/80 flex items-center justify-center text-base hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm hover:shadow-md"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <!-- Email Direct -->
+          <a 
+            href="mailto:h1101261017@student.untan.ac.id" 
+            aria-label="Kirim Email ke Ade Ricky"
+            class="w-11 h-11 rounded-full bg-teal-50/80 hover:bg-miku-teal text-teal-700 hover:text-white border border-teal-200/80 flex items-center justify-center text-base hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm hover:shadow-md"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright & Signature -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3 text-center sm:text-left">
+        <p>
+          &copy; 2026 Ade Ricky Nusantara. Seluruh hak cipta dilindungi.
+        </p>
+        <p class="flex items-center justify-center gap-1.5">
+          <span>Didesain dengan nuansa pastel mint & estetika modern</span>
+          <span class="text-pink-400">♥</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       6. FLOATING MUSIK / BACKSOUND CONTROLLER
+       Audio loop dari "assets/audio/backsound.mp3"
+       Posisi aman di pojok bawah layar (tidak menutupi konten penting)
+  ======================================================== -->
+  <div class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50">
+    
+    <!-- Audio HTML5 Element (Aman dari Autoplay Error) -->
+    <audio id="bg-audio" loop preload="auto">
+      <source src="assets/audio/backsound.mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <!-- Floating Button with Hover Scale & Equalizer Animation -->
+    <button 
+      id="music-toggle-btn" 
+      type="button" 
+      aria-label="Nyalakan atau Matikan Musik Latar"
+      class="hover:scale-105 active:scale-95 transition-all duration-300 bg-white/95 hover:bg-white text-teal-800 px-4 py-2.5 rounded-full shadow-xl shadow-teal-200/50 border border-teal-200 backdrop-blur-md flex items-center gap-2.5 cursor-pointer group"
+    >
+      <!-- Equalizer Animated Bars -->
+      <div id="music-equalizer" class="flex items-center gap-0.5 h-4 paused">
+        <span class="sound-bar"></span>
+        <span class="sound-bar"></span>
+        <span class="sound-bar"></span>
+        <span class="sound-bar"></span>
+      </div>
+
+      <!-- Icon Speaker Active / Muted -->
+      <div class="text-miku-teal group-hover:scale-110 transition-transform">
+        <i id="music-icon-playing" class="fa-solid fa-volume-high text-sm hidden"></i>
+        <i id="music-icon-muted" class="fa-solid fa-volume-xmark text-sm text-slate-400"></i>
+      </div>
+
+      <!-- Text Status Label -->
+      <span id="music-status-text" class="text-xs font-bold text-slate-700 hidden sm:inline select-none">
+        Musik: Mati
+      </span>
+    </button>
+  </div>
+
+  <!-- ========================================================
+       7. INTERACTIVE PROJECT DETAIL MODAL
+  ======================================================== -->
+  <div id="project-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full border border-teal-200 shadow-2xl overflow-hidden my-8 transform transition-all animate-soft-float">
+      
+      <!-- Modal Header Image -->
+      <div class="relative aspect-video bg-teal-50">
+        <img id="modal-image" src="" alt="" class="w-full h-full object-cover">
+        <button id="modal-close-btn" type="button" aria-label="Tutup Detail Proyek" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 hover:bg-white text-slate-700 flex items-center justify-center shadow-md hover:scale-110 transition-all">
+          <i class="fa-solid fa-xmark text-base"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 sm:p-8 space-y-4">
+        <div>
+          <span id="modal-category" class="px-3 py-1 bg-teal-50 text-teal-800 text-xs font-bold rounded-full border border-teal-200"></span>
+          <h3 id="modal-title" class="font-heading font-extrabold text-xl sm:text-2xl text-slate-900 mt-2"></h3>
+        </div>
+
+        <p id="modal-description" class="text-sm text-slate-600 leading-relaxed"></p>
+
+        <!-- Key Features List -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-slate-800 mb-2">Fitur Unggulan Proyek:</h4>
+          <ul id="modal-features" class="space-y-1.5"></ul>
+        </div>
+
+        <!-- Tech Stack Used -->
+        <div>
+          <h4 class="font-heading font-bold text-sm text-slate-800 mb-2">Teknologi yang Digunakan:</h4>
+          <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- Modal CTA -->
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-end gap-3">
+          <button type="button" onclick="document.getElementById('project-modal').classList.add('hidden')" class="px-5 py-2.5 rounded-full border border-slate-200 text-slate-600 text-xs sm:text-sm font-semibold hover:bg-slate-50 transition-colors">
+            Tutup
+          </button>
+          <a href="#kontak" onclick="document.getElementById('project-modal').classList.add('hidden')" class="hover:scale-105 active:scale-95 transition-all duration-300 px-6 py-2.5 rounded-full bg-gradient-to-r from-miku-teal to-teal-600 text-white text-xs sm:text-sm font-bold shadow-md shadow-teal-200 flex items-center gap-2">
+            <i class="fa-solid fa-comments"></i>
+            <span>Diskusikan Proyek Serupa</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
